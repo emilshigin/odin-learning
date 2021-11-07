@@ -1,0 +1,110 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(255, 251, 240);
+}
+h1{
+  margin: 0px;
+}
+h2{
+  margin: 0px;
+}
+
+/* Navigation */
+nav{
+  width: 100%;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: right;
+  margin-right: 25px;
+  width: auto;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+  
+/* right hand floating cards*/
+/* Used for the first element to align with the artical */
+#topOfStack{
+  margin-top: 0px;
+}
+
+.rightHand{
+  float: right;
+  margin: 10px 20px 0px 0px;
+}
+
+.rightHandFloat{
+  background-color: white;
+  border: #777 solid 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  min-height: 60%;
+  width: 30vw;
+  padding: 10px;
+}
+
+#reviews h3{
+  padding: 0px;
+  margin: 0px;
+}
+
+#reviews p{
+  padding: 5px;
+  margin: 0px;
+}
+
+
+/* Articles*/
+main{
+  float:left;
+  margin: 10px 0px 0px 25px;
+  width: 64vw;
+}
+
+article {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: #333 solid 1px;
+  border-radius: 5px;
+}
+
+article h1 {
+  margin: 0;
+}
+
+article img{
+   display: block;
+   padding: 10px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 70%;
+}
+
+.steps{
+  margin: 20px 10px;
+}
+.steps li{
+  padding: 10px 0px;
+  text-align: justify;
+}
