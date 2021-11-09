@@ -8,6 +8,6 @@
 >when I pull the repo everything should work without breaking pages.
 
 ### Project Afterthoughts
-> I would set up the div tags to account for device display sized. When the website\
-> is other then full screen it is miss algned. I would like to look into screen readers\
-> and support them. 
+> I would set up the div tags to account for moble devices and change the website format.\
+> When the website is other then full screen it is miss algned. I would like to look into\
+> screen readers and how to support them. 
