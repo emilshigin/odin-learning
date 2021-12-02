@@ -1,3 +1,7 @@
+##[Landing Page](https://emilshigin.github.io/odinProject/index.html)
+>A landing page that foucuses on using flex
+>TODO: Modify to make it usable as a  real landing page for odin project
+
 ## [Google Homepage Demo](https://emilshigin.github.io/google-homepage/index.html)
 >[Google Homepage Repo](https://github.com/emilshigin/google-homepage)
 >Made the google homepage before this repo that is why it is seperated
