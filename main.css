@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    background-color: #1f2937;
+    flex-direction: row;
+    justify-content: right;
+    align-items: baseline;
+    padding: 10px 150px;
+}
+
+#logo{
+    justify-content: left;
+    color:#fff;
+    font-size: 25px;
+    flex: 50%;
+}
+
+nav div{
+    padding: 5px 10px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1f2937;
+    padding: 50px 150px;
+}
+
+.imagePlaceHolder{
+    max-width: 500px;
+    max-height: 350px;
+    background-color: gray;
+}
+.imagePlaceHolder img{
+    max-width: 500px;
+    max-height: 350px;
+}
+
+header div{
+    flex-direction: column;
+    text-align: auto;
+}
+
+header button{
+    border-radius: 5px;
+    border:none;
+    padding: 5px 20px;
+    background-color:#3882f6;
+    color: #fff;
+}
+
+header h1{
+    font-size: 48px; 
+    font-weight:bold;
+    color: #f9faf8;
+}
+
+header p{
+    padding: 10px 0px;
+    color: #f9faf8;
+}
+
+.randomInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 250px;
+}
+
+.randomInfo h2{
+    align-self: center;
+    padding-bottom: 50px;
+}
+.randomInfo .infoHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infoHolder .randomCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.randomCard .icon{
+    border: 2px solid #3882f6;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px
+}
+.randomCard .randomDiscription{
+    text-align: center;
+    width: 150px
+}
+
+.quoteBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5e7eb;
+    padding: 50px 250px;
+}
+
+.quoteBox .quote{
+    font-size: 25px;
+    font:  lighter;
+    font-style: italic;
+    text-align: justify;
+    color: #1f2937;
+}
+
+.quoteBox .author{
+    align-self: end;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.callTOAction{
+    display: flex;
+    border-radius: 10px;
+    margin: 3em 6em;
+    background-color: #3882f6;
+    padding: 50px 150px;
+}
+.callTOAction div{
+    flex:75%;
+    justify-content: left;
+    color:#fff;
+}
+
+.callTOAction button{
+    align-self:end;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    background-color:#3882f6;
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    background-color: #1f2937;
+    color: #fff;
+    padding: 50px 150px;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    nav{
+        flex: 100%;
+        flex-direction: column;
+    }
+
+    nav #logo{
+        justify-content: center;
+    }
+
+    nav div{
+        font-size: 24px;
+        justify-content: center;   
+    }
+}
