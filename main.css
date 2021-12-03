@@ -2,14 +2,14 @@
     margin: 0px;
     padding: 0px;
 }
-
+/* Navigation */
 nav{
     display: flex;
     background-color: #1f2937;
     flex-direction: row;
     justify-content: right;
     align-items: baseline;
-    padding: 10px 150px;
+    padding: 10px 15%;
 }
 
 #logo{
@@ -25,27 +25,23 @@ nav div{
     color: lightgray;
 }
 
+/* HEADER */
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #1f2937;
-    padding: 50px 150px;
+    padding: 50px 15%;
 }
 
-.imagePlaceHolder{
-    max-width: 500px;
-    max-height: 350px;
-    background-color: gray;
-}
 .imagePlaceHolder img{
-    max-width: 500px;
-    max-height: 350px;
+    width: 500px;
+    height: 350px;
+    margin-left: 50px;
 }
 
 header div{
     flex-direction: column;
-    text-align: auto;
 }
 
 header button{
@@ -63,47 +59,70 @@ header h1{
 }
 
 header p{
-    padding: 10px 0px;
+    /*   padding: 10px 150px 10px 0px; */
+    font-size: 20px;
     color: #f9faf8;
 }
 
-.randomInfo{
+header .iconStack{
     display: flex;
-    flex-direction: column;
-    padding: 50px 250px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
 }
 
-.randomInfo h2{
+/* Projects Info */
+.projectStack{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15%;
+}
+
+.projectStack h2{
+    text-align: center;
     align-self: center;
     padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #cc9543 ;    
 }
-.randomInfo .infoHolder{
+.projectStack .projectHolder{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.infoHolder .randomCard{
+.projectHolder .projectCard{
     display: flex;
     flex-direction: column;
 }
 
-.randomCard .icon{
+.projectCard a .icon{
     border: 2px solid #3882f6;
     border-radius: 15px;
-    height: 150px;
-    width: 150px
+    height: 250px;
+    width: 250px
 }
-.randomCard .randomDiscription{
-    text-align: center;
-    width: 150px
+.projectCard .projectDiscription{
+    font-weight: lighter;
+    border-radius: 15px;
+    width: 200px;
+    border: none;
+    background-color: #fff;
+    color:#4a4a4a;
+    margin: auto;
+    margin-top: -30px;
+    padding-left: 30px;
+    font-size: 20px;
 }
 
+/* Quote */
 .quoteBox{
     display: flex;
     flex-direction: column;
     background-color: #E5e7eb;
-    padding: 50px 250px;
+    padding: 50px 15%;
 }
 
 .quoteBox .quote{
@@ -120,12 +139,13 @@ header p{
     font-weight: bolder;
 }
 
+/* Call to action */
 .callTOAction{
     display: flex;
     border-radius: 10px;
-    margin: 3em 6em;
+    margin: 3em 15%;
     background-color: #3882f6;
-    padding: 50px 150px;
+    padding: 50px 15%;
 }
 .callTOAction div{
     flex:75%;
