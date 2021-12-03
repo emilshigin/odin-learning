@@ -2,10 +2,17 @@
     margin: 0px;
     padding: 0px;
 }
+.gradiantTransparentBottom{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,.35));
+    height: 75px;
+    width: 100%;
+    margin-top: -75px;
+}
+
 /* Navigation */
 nav{
     display: flex;
-    background-color: #1f2937;
+    background-image: linear-gradient( #738c7f, #7c9287);
     flex-direction: row;
     justify-content: right;
     align-items: baseline;
@@ -30,7 +37,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #1f2937;
+    background-image: linear-gradient(#7c9287, #a4b1aa);
     padding: 50px 15%;
 }
 
@@ -48,7 +55,7 @@ header button{
     border-radius: 5px;
     border:none;
     padding: 5px 20px;
-    background-color:#3882f6;
+    background-color:#8C7380;
     color: #fff;
 }
 
@@ -59,7 +66,6 @@ header h1{
 }
 
 header p{
-    /*   padding: 10px 150px 10px 0px; */
     font-size: 20px;
     color: #f9faf8;
 }
@@ -99,7 +105,7 @@ header .iconStack{
 }
 
 .projectCard a .icon{
-    border: 2px solid #3882f6;
+    border: 2px solid #8C7380;
     border-radius: 15px;
     height: 250px;
     width: 250px
@@ -121,7 +127,7 @@ header .iconStack{
 .quoteBox{
     display: flex;
     flex-direction: column;
-    background-color: #E5e7eb;
+    background-color: #a4b1aa;
     padding: 50px 15%;
 }
 
@@ -144,7 +150,7 @@ header .iconStack{
     display: flex;
     border-radius: 10px;
     margin: 3em 15%;
-    background-color: #3882f6;
+    background-color: #8C7380;
     padding: 50px 15%;
 }
 .callTOAction div{
@@ -158,13 +164,13 @@ header .iconStack{
     border-radius: 5px;
     border: 2px solid #fff;
     padding: 5px 20px;
-    background-color:#3882f6;
+    background-color:#8C7380;
     color: #fff;
 }
 
 footer{
     display: flex;
-    background-color: #1f2937;
+    background-image: linear-gradient(#a4b1aa,#738c7f);
     color: #fff;
     padding: 50px 150px;
     justify-content: center;
