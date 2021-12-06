@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(255, 213, 255);
+}
+
+.tool{
+    height: 100px;
+
+    border-bottom: solid 5px black;
+}
