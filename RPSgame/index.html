@@ -8,16 +8,29 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <div class="tool" id="rock">
-        <img src="img/rock.png" alt="rock">
+    <h1 id="gameTitle">Rock Paper Scissors</h1>
+        
+    <!--Player Seletion  -->
+    <div class="playerSelection">
+        <div class="tool" id="Rock" onClick="game(this)">
+            <img src="img/rock.png" alt="rock">
+        </div>
+        <div class="tool" id="Paper" onClick="game(this)">
+            <img src="img/paper.png" alt="paper">
+        </div>
+        <div class="tool" id="Scissors" onClick="game(this)">
+            <img src="img/scissor.png" alt="scissors">
+        </div>
+    </div> 
+
+    <!-- Arena -->
+    <div class="arena">
+        <h1 id="winner">Pick Your Character</h1>    
+        <h3 id="playByPlay"></h3>
     </div>
-    <div class="tool" id="paper">
-        <img src="img/paper.png" alt="paper">
-    </div>
-    <div class="tool" id="scissors">
-        <img src="img/scissor.png" alt="scissors">
-    </div>
+
+    <!-- Computer Selection  -->
+    
     <script src="main.js"></script>
 </body>
 </html>

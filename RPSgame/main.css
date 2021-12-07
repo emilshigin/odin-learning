@@ -3,11 +3,64 @@
     margin: 0px;
 }
 body{
-    background-color: rgb(255, 213, 255);
+    background-color: #111;
+}
+#gameTitle{
+    /* font */
+    font-size: 10vh;
+    -webkit-text-stroke: 1px white;
+    color: yellow;
+    font-family: serif;
+    /* alignment */
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.playerSelection{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.tool{
+    padding: 10px;
+
+}
+.tool img{
+    height: 20vw;
+    border: solid 1px white;
+    display: block;
+    opacity: 0.7;
 }
 
-.tool{
-    height: 100px;
+.tool img:hover{
+    opacity: 1;
+    border: solid 2px red;
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
 
-    border-bottom: solid 5px black;
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+/* Arnea */
+.arena{
+    /* alignment */
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    color: white;    
 }
