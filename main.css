@@ -95,6 +95,7 @@ header .iconStack{
 }
 .projectStack .projectHolder{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -102,6 +103,7 @@ header .iconStack{
 .projectHolder .projectCard{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .projectCard a .icon{
@@ -116,7 +118,7 @@ header .iconStack{
     border-radius: 15px;
     width: 200px;
     border: none;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.596);
     color:#4a4a4a;
     margin: auto;
     margin-top: -30px;
