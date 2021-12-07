@@ -111,6 +111,7 @@ header .iconStack{
     width: 250px
 }
 .projectCard .projectDiscription{
+    text-align: center;
     font-weight: lighter;
     border-radius: 15px;
     width: 200px;
