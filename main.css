@@ -140,6 +140,8 @@ header .iconStack{
     font-style: italic;
     text-align: justify;
     color: #1f2937;
+}    .projectStack{
+
 }
 
 .quoteBox .author{
@@ -179,18 +181,25 @@ footer{
     justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+    
     nav{
         flex: 100%;
         flex-direction: column;
     }
-
+    
     nav #logo{
         justify-content: center;
     }
-
+    
     nav div{
         font-size: 24px;
         justify-content: center;   
+    }
+    .projectHolder .projectCard{
+        padding-left: 30%;
+    }
+    header{
+        flex-wrap: wrap;
     }
 }
