@@ -197,7 +197,7 @@ footer{
         justify-content: center;   
     }
     .projectHolder .projectCard{
-        padding-left: 30%;
+        justify-self: center;
     }
     header{
         flex-wrap: wrap;
