@@ -18,18 +18,33 @@
         <div class="tool" id="Paper" onClick="game(this)">
             <img src="img/paper.png" alt="paper">
         </div>
-        <div class="tool" id="Scissors" onClick="game(this)">
-            <img src="img/scissor.png" alt="scissors">
+        <div class="tool" id="Scissor" onClick="game(this)">
+            <img src="img/scissor.png" alt="scissor">
         </div>
     </div> 
 
     <!-- Arena -->
     <div class="arena">
         <h1 id="winner">Pick Your Character</h1>    
-        <h3 id="playByPlay"></h3>
     </div>
 
-    <!-- Computer Selection  -->
+    <!-- Score Card  -->
+    <div class="scoreCards">
+        <div class='fightCards'>
+            <h2>Player</h2>
+            <div id="playerSelected">
+            </div>
+            <div id='playerScore'>Player Score: 0</div>
+        </div>
+
+        <div class='fightCards'>
+            <h2>Computer</h2>
+            <div id="computerSelected">
+            </div>
+            <div id='computerScore'>Computer Score: 0</div>
+        </div>
+    </div>
+    <h3 id="playByPlay"></h3>
     
     <script src="main.js"></script>
 </body>

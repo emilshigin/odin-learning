@@ -2,14 +2,15 @@
     padding: 0px;
     margin: 0px;
 }
+
 body{
     background-color: #111;
 }
 #gameTitle{
     /* font */
     font-size: 10vh;
-    -webkit-text-stroke: 1px white;
-    color: yellow;
+    -webkit-text-stroke: 1px yellow;
+    color: #ffd700;
     font-family: serif;
     /* alignment */
     text-align: center;
@@ -36,7 +37,7 @@ body{
 
 .tool img:hover{
     opacity: 1;
-    border: solid 2px red;
+    border: solid 2px #990000;
     animation-name: bounce;
     animation-timing-function: linear;
     animation-duration: .5s;
@@ -59,8 +60,67 @@ body{
 /* Arnea */
 .arena{
     /* alignment */
+    font-size: 3vh;
     text-align: center;
     margin-top: 10px;
     width: 100%;
     color: white;    
+}
+
+/* Score Cards */
+.scoreCards{
+    /* alignment */
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.fightCards{
+    display: flex;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #ffd700;
+    color: black;
+    font-size: 3vh;
+    background-color: #ffd700;
+    border: aliceblue solid 1px;
+    width: 50%;
+    height: 30%;
+}
+
+#playerSelected{
+    border: white 2px solid;  
+    font-size: 5vh;
+    height: 350px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+#computerSelected{
+    border: white 2px solid;
+    font-size: 5vh;
+    height: 350px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+#playerScore{
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+#computerScore{
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+#playByPlay{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
