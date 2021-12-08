@@ -1,4 +1,4 @@
-let options = ["Rock", "Paper", "Scissor", "Exit"];
+let options = ["rock", "paper", "scissor"];
 let roundOrder = ["First", "Second", "Third", "Fourth", "Final"];
 let playerChoice,computerChoice,winner,gameResult, round = 0, playerPoints = 0, computerPoints = 0; 
 
