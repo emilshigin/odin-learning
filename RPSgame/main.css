@@ -8,6 +8,7 @@ body{
 }
 #gameTitle{
     /* font */
+    display: block;
     font-size: 10vh;
     -webkit-text-stroke: 1px yellow;
     color: #ffd700;
@@ -29,7 +30,7 @@ body{
 
 }
 .tool img{
-    height: 20vw;
+    height: 15vh;
     border: solid 1px white;
     display: block;
     opacity: 0.7;
@@ -68,7 +69,7 @@ body{
 }
 
 /* Score Cards */
-.scoreCards{
+#scoreCards{
     /* alignment */
     justify-content: space-around;
     display: flex;
@@ -79,21 +80,20 @@ body{
 }
 
 .fightCards{
-    display: flex;
-    flex-direction: column;
+    border: aliceblue solid 1px;
+    background-color: #ffd700;
     -webkit-text-stroke: 1px #ffd700;
+    flex-direction: column;
     color: black;
     font-size: 3vh;
-    background-color: #ffd700;
-    border: aliceblue solid 1px;
-    width: 50%;
-    height: 30%;
+    height: 38vw;
+    width: 40vw;
 }
 
 #playerSelected{
     border: white 2px solid;  
     font-size: 5vh;
-    height: 350px;
+    height: 30vw;
     margin: 10px;
     background-color: rgb(0, 0, 0);
     background-size: cover;
@@ -102,7 +102,7 @@ body{
 #computerSelected{
     border: white 2px solid;
     font-size: 5vh;
-    height: 350px;
+    height: 30vw;
     margin: 10px;
     background-color: rgb(0, 0, 0);
     background-size: cover;
@@ -120,7 +120,67 @@ body{
 
 #playByPlay{
     width: 100%;
-    padding: 10px;
+    position: absolute;
+    bottom: 0px;
     text-align: center;
     color: white;
 }
+
+/* Win Screen */
+#gameScreen{
+    display: none;
+}
+
+#gameSettings{
+    display: flex;
+    flex-direction: column;
+    /* alignment */
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 50px 1vh;
+    /* cosmetic */
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ffd700, #ffa500);
+    /* font */
+    color: rgb(255, 216, 118);
+    -webkit-text-stroke: 1px black;
+    font-size: 3vh;
+}
+
+
+.stats{
+    border: rgba(255, 0, 0, 0.315) 5px dotted;
+    margin: 10px 50px;
+}
+
+.stats p{
+    padding: 0px 50px;
+    text-align: left;
+    justify-content: start;
+    /* font */
+    font-size: 5vh;
+    background: -webkit-linear-gradient(#ffd700, rgb(255, 91, 73));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#gameSettings .buttonHolder{
+    padding: 0px 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#gameSettings .buttonHolder button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 1px #000000;
+    background-color: #a7ff00;
+    color: black;
+    font-size: 2vh;
+}
+
