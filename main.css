@@ -65,6 +65,7 @@ header h1{
 }
 
 header p{
+    width: 100%;
     font-size: 20px;
     color: #f9faf8;
 }
