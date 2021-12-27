@@ -33,16 +33,15 @@ header{
     background-color: #1f2937;
     padding: 50px 15%;
 }
-
-.imagePlaceHolder img{
-    width: 500px;
-    height: 350px;
-    margin-left: 50px;
-}
-
 header div{
     flex-direction: column;
 }
+
+.imagePlaceHolder img{
+    width: 100%;
+    margin-left: 50px;
+}
+
 
 header button{
     border-radius: 5px;
@@ -89,6 +88,7 @@ header .iconStack{
 }
 .projectStack .projectHolder{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -96,6 +96,7 @@ header .iconStack{
 .projectHolder .projectCard{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .projectCard a .icon{
@@ -105,11 +106,12 @@ header .iconStack{
     width: 250px
 }
 .projectCard .projectDiscription{
+    text-align: center;
     font-weight: lighter;
     border-radius: 15px;
     width: 200px;
     border: none;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.596);
     color:#4a4a4a;
     margin: auto;
     margin-top: -30px;
@@ -131,6 +133,8 @@ header .iconStack{
     font-style: italic;
     text-align: justify;
     color: #1f2937;
+}    .projectStack{
+
 }
 
 .quoteBox .author{
@@ -171,17 +175,34 @@ footer{
 }
 
 @media (max-width: 800px) {
+    
     nav{
+
         flex: 100%;
         flex-direction: column;
     }
-
+    
     nav #logo{
         justify-content: center;
     }
-
+    
     nav div{
+        width: 100%;
         font-size: 24px;
         justify-content: center;   
+    }
+    .projectHolder .projectCard{
+        justify-self: center;
+    }
+    header{
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    header .imagePlaceHolder img{
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
     }
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="gameScreen">
+        <h1 id="gameTitle">Rock Paper Scissors</h1>    
+        <!--Player Seletion  -->
+        <div class="playerSelection">
+            <div class="tool" id="rock" onClick="game(this)">
+                <img src="img/rock.png" alt="rock">
+            </div>
+            <div class="tool" id="paper" onClick="game(this)">
+                <img src="img/paper.png" alt="paper">
+            </div>
+            <div class="tool" id="scissor" onClick="game(this)">
+                <img src="img/scissor.png" alt="scissor">
+            </div>
+        </div> 
+    
+        <!-- Arena -->
+        <div class="arena">
+            <h1 id="winner">Pick Your Character</h1>    
+        </div>
+    
+        <!-- Score Card  -->
+        <div id="scoreCards">
+            <div class='fightCards'>
+                <h2>Player</h2>
+                <div id="playerSelected">
+                </div>
+                <div id='playerScore'>Player Score: 0</div>
+            </div>
+    
+            <div class='fightCards'>
+                <h2>Computer</h2>
+                <div id="computerSelected">
+                </div>
+                <div id='computerScore'>Computer Score: 0</div>
+            </div>
+        </div>
+        <h3 id="playByPlay"></h3>
+    </div>
+    <div id="gameSettings">
+        <h1>Game Stats</h1>
+        <div class="stats">
+            <p>Games Played: <span id="gamesPlayed">0</span></p>
+            <p>You Won: <span id="wins">0</span></p>
+            <p>You Lost: <span id="losses">0</span></p>
+            <p>You Tied: <span id="ties">0</span></p>
+        </div>
+        <div class="buttonHolder">
+            <button id="startGame" onClick="startGame()">Continue Game</button>
+            <button id="reset" onClick="resetStats()">Reset Stats</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
