@@ -1,215 +1,203 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.gradiantTransparentBottom{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,.35));
-    height: 75px;
-    width: 100%;
-    margin-top: -75px;
-}
-
 /* Navigation */
-nav{
-    display: flex;
-    background-image: linear-gradient( #738c7f, #7c9287);
-    flex-direction: row;
-    justify-content: right;
-    align-items: baseline;
-    padding: 10px 15%;
+nav {
+  display: flex;
+  background-color: #1f2937;
+  flex-direction: row;
+  justify-content: right;
+  align-items: baseline;
+  padding: 10px 15%;
 }
 
-#logo{
-    justify-content: left;
-    color:#fff;
-    font-size: 25px;
-    flex: 50%;
+#logo {
+  justify-content: left;
+  color: #fff;
+  font-size: 25px;
+  flex: 50%;
 }
 
-nav div{
-    padding: 5px 10px;
-    font-size: 20px;
-    color: lightgray;
+nav div {
+  padding: 5px 10px;
+  font-size: 20px;
+  color: lightgray;
 }
 
 /* HEADER */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-image: linear-gradient(#7c9287, #a4b1aa);
-    padding: 50px 15%;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1f2937;
+  padding: 50px 15%;
 }
-header div{
-    flex-direction: column;
-}
-
-.imagePlaceHolder img{
-    width: 100%;
-    margin-left: 50px;
+header div {
+  flex-direction: column;
 }
 
-
-header button{
-    border-radius: 5px;
-    border:none;
-    padding: 5px 20px;
-    background-color:#8C7380;
-    color: #fff;
+.imagePlaceHolder img {
+  width: 100%;
+  margin-left: 50px;
 }
 
-header h1{
-    font-size: 48px; 
-    font-weight:bold;
-    color: #f9faf8;
+header button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 20px;
+  background-color: #3882f6;
+  color: #fff;
 }
 
-header p{
-    width: 100%;
-    font-size: 20px;
-    color: #f9faf8;
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
 }
 
-header .iconStack{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 0px;
+header p {
+  /*   padding: 10px 150px 10px 0px; */
+  font-size: 20px;
+  color: #f9faf8;
+}
+
+header .iconStack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0px;
 }
 
 /* Projects Info */
-.projectStack{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 15%;
+.projectStack {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15%;
 }
 
-.projectStack h2{
-    text-align: center;
-    align-self: center;
-    padding-bottom: 50px;
-    font-size: 30px;
-    font-weight: lighter;
-    color: #cc9543 ;    
+.projectStack h2 {
+  text-align: center;
+  align-self: center;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #cc9543;
 }
-.projectStack .projectHolder{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.projectHolder .projectCard{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.projectStack .projectHolder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.projectCard a .icon{
-    border: 2px solid #8C7380;
-    border-radius: 15px;
-    height: 250px;
-    width: 250px
+.projectHolder .projectCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
-.projectCard .projectDiscription{
-    text-align: center;
-    font-weight: lighter;
-    border-radius: 15px;
-    width: 200px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.596);
-    color:#4a4a4a;
-    margin: auto;
-    margin-top: -30px;
-    padding-left: 30px;
-    font-size: 20px;
+
+.projectCard a .icon {
+  border: 2px solid #3882f6;
+  border-radius: 15px;
+  height: 250px;
+  width: 250px;
+}
+.projectCard .projectDiscription {
+  text-align: center;
+  font-weight: lighter;
+  border-radius: 15px;
+  width: 200px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.596);
+  color: #4a4a4a;
+  margin: auto;
+  margin-top: -30px;
+  padding-left: 30px;
+  font-size: 20px;
 }
 
 /* Quote */
-.quoteBox{
-    display: flex;
-    flex-direction: column;
-    background-color: #a4b1aa;
-    padding: 50px 15%;
+.quoteBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 50px 15%;
 }
 
-.quoteBox .quote{
-    font-size: 25px;
-    font:  lighter;
-    font-style: italic;
-    text-align: justify;
-    color: #1f2937;
-}    .projectStack{
-
+.quoteBox .quote {
+  font-size: 25px;
+  font: lighter;
+  font-style: italic;
+  text-align: justify;
+  color: #1f2937;
 }
 
-.quoteBox .author{
-    align-self: end;
-    font-size: 25px;
-    font-weight: bolder;
+.quoteBox .author {
+  align-self: end;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 /* Call to action */
-.callTOAction{
-    display: flex;
-    border-radius: 10px;
-    margin: 3em 15%;
-    background-color: #8C7380;
-    padding: 50px 15%;
+.callTOAction {
+  display: flex;
+  border-radius: 10px;
+  margin: 3em 15%;
+  background-color: #3882f6;
+  padding: 50px 15%;
 }
-.callTOAction div{
-    flex:75%;
-    justify-content: left;
-    color:#fff;
-}
-
-.callTOAction button{
-    align-self:end;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    padding: 5px 20px;
-    background-color:#8C7380;
-    color: #fff;
+.callTOAction div {
+  flex: 75%;
+  justify-content: left;
+  color: #fff;
 }
 
-footer{
-    display: flex;
-    background-image: linear-gradient(#a4b1aa,#738c7f);
-    color: #fff;
-    padding: 50px 150px;
-    justify-content: center;
+.callTOAction button {
+  align-self: end;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  padding: 5px 20px;
+  background-color: #3882f6;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 50px 150px;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
-    
-    nav{
+  nav {
+    flex: 100%;
+    flex-direction: column;
+  }
 
-        flex: 100%;
-        flex-direction: column;
-    }
-    
-    nav #logo{
-        justify-content: center;
-    }
-    
-    nav div{
-        width: 100%;
-        font-size: 24px;
-        justify-content: center;   
-    }
-    .projectHolder .projectCard{
-        justify-self: center;
-    }
-    header{
-        width: 100%;
-        padding: 0px 10px;
-        margin: 0px;
-        flex-wrap: wrap;
-    }
-    header .imagePlaceHolder img{
-        width: 90%;
-        padding: 0px;
-        margin: 0px;
-    }
+  nav #logo {
+    justify-content: center;
+  }
+
+  nav div {
+    width: 100%;
+    font-size: 24px;
+    justify-content: center;
+  }
+  .projectHolder .projectCard {
+    justify-self: center;
+  }
+  header {
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px;
+    flex-wrap: wrap;
+  }
+  header .imagePlaceHolder img {
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+  }
 }

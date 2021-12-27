@@ -11,7 +11,7 @@
 >with the repo and not the folder. I opted to leave this issue inexchange for\
 >when I pull the repo everything should work without breaking pages.
 
-### Project Afterthoughts
-> I would set up the div tags to account for moble devices and change the website format.\
-> When the website is other then full screen it is miss algned. I would like to look into\
-> screen readers and how to support them. 
+## [Rock Paper Scissors Game Website Demo](https://emilshigin.github.io/odinProject/RPSgame/index.html)
+> Javascript Rock Paper Scissors game that is best of five.\
+> Once someone wins 3 games, game stops and boots to the score page.\
+> You have an option to reset the score or continue playing.
