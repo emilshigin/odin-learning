@@ -8,32 +8,42 @@
   </head>
   <body>
     <h1>THE TITLE OF YOUR WEBPAGE</h1>
-    <div id="container"></div>
+    <div id="container">
+      <div class="display"></div>
+      <div class="controls"></div>
+    </div>
+
+    <button onclick="alert('Hello World')">Click Me</button>
+    <!-- <button id="btn">Click Me</button> -->
+    <button id="btn">Click Me Two</button>
+
     <script>
+      //Button Work
+      const btn = document.querySelector('#btn');
+      btn.addEventListener('click', () => {
+              //p
+              const paragraph = document.createElement("p");
+              paragraph.style.color = "red";
+              paragraph.textContent = "Hey I’m red!";
+              container.appendChild(paragraph);
+              //content
+              const content = document.createElement("div");
+              content.classList.add("content");
+              content.textContent = "This is the glorious text-content!";
+              container.appendChild(content);
+      });
+
+      // Addidng Elements to the DOM
       const container = document.querySelector("#container");
-
-      //content
-      const content = document.createElement("div");
-      content.classList.add("content");
-      content.textContent = "This is the glorious text-content!";
-      container.appendChild(content);
-
-      const content2 = document.createElement("div");
-      content2.classList.add("content");
-      content2.textContent = "This is the glorious text-content!";
-      container.appendChild(content2);
+      console.dir(container.firstElementChild);
 
       // small header
       const smallHeader = document.createElement("h3");
       smallHeader.style.color = "blue";
       smallHeader.textContent = "I am blu3!";
       container.appendChild(smallHeader);
-
-      //p
-      const peragrph = document.createElement("p");
-      peragrph.style.color = "red";
-      peragrph.textContent = "Hey I’m red!";
-      container.appendChild(peragrph);
+      smallHeader.setAttribute('id', 'verySmallHeader');
     </script>
+
   </body>
-</html>
+</html>   
