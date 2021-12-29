@@ -4,46 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>THE TITLE OF YOUR WEBPAGE</h1>
-    <div id="container">
-      <div class="display"></div>
-      <div class="controls"></div>
+    <h1>Etch-a-Sketch</h1>
+    <div class="application-container">
+      <div id="sketch-tools"></div>
+      <div id="sketch-container"></div>
     </div>
-
-    <button onclick="alert('Hello World')">Click Me</button>
-    <!-- <button id="btn">Click Me</button> -->
-    <button id="btn">Click Me Two</button>
-
-    <script>
-      //Button Work
-      const btn = document.querySelector('#btn');
-      btn.addEventListener('click', () => {
-              //p
-              const paragraph = document.createElement("p");
-              paragraph.style.color = "red";
-              paragraph.textContent = "Hey I’m red!";
-              container.appendChild(paragraph);
-              //content
-              const content = document.createElement("div");
-              content.classList.add("content");
-              content.textContent = "This is the glorious text-content!";
-              container.appendChild(content);
-      });
-
-      // Addidng Elements to the DOM
-      const container = document.querySelector("#container");
-      console.dir(container.firstElementChild);
-
-      // small header
-      const smallHeader = document.createElement("h3");
-      smallHeader.style.color = "blue";
-      smallHeader.textContent = "I am blu3!";
-      container.appendChild(smallHeader);
-      smallHeader.setAttribute('id', 'verySmallHeader');
-    </script>
-
+    <footer>Emil Shigin</footer>
+    <script src="etch-a-sketch.js"></script>
   </body>
-</html>   
+</html>
