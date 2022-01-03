@@ -1,0 +1,104 @@
+:root {
+  --color-darkist: #1d1d1d;
+  --color-dark: #2c3e50;
+  --color-sketchpad: #ecf0f1;
+  --color-font: #ffffff;
+}
+body {
+  margin: 0px;
+  padding: 0px 0px;
+  background-color: var(--color-dark);
+}
+
+toolbar {
+  display: inline-block;
+  padding-left: 10px;
+  width: 100vw;
+  background-color: var(--color-darkist);
+}
+
+toolbar button {
+  font-size: 1em;
+  padding: 0px 10px 5px 5px;
+  outline: none;
+  border: none;
+  background-color: var(--color-darkist);
+  color: var(--color-font);
+  cursor: pointer;
+}
+
+.application-container {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: baseline;
+  justify-content: space-between;
+  height: 90vh;
+  position: relative;
+}
+
+#sketch-tools {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  margin: 0px 10px 0px 0px;
+  margin-right: 10px;
+  background-color: red;
+  border: solid 1px #000;
+}
+
+#sketch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  height: 100%;
+  background-color: var(--color-sketchpad);
+  border: solid 1px #000;
+}
+
+#sketch-layer-info {
+  flex-wrap: wrap;
+  background-color: aqua;
+  width: 250px;
+  height: 100%;
+  margin-left: 10px;
+  border: solid 1px #000;
+}
+
+footer {
+  position: bottom;
+
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .application-container {
+    flex-direction: column;
+  }
+
+  .application-container {
+    padding: 0px;
+    margin: 0px;
+  }
+  #sketch-tools {
+    display: flex;
+    flex-direction: row;
+    min-height: 75px;
+    height: 75px;
+    width: auto;
+    margin: 0px;
+  }
+  #sketch-container {
+    min-height: 500px;
+    margin: 0px;
+  }
+  #sketch-layer-info {
+    min-height: 200px;
+    height: 200px;
+    width: auto;
+    margin: 0px;
+  }
+}

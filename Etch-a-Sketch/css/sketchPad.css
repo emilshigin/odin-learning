@@ -1,0 +1,41 @@
+/* dragable windows */
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  padding: 10px 5px;
+  transform: translate(0%, -50%);
+}
+
+#dragable-window {
+  position: absolute;
+  z-index: auto;
+  width: 200px;
+  background-color: rgb(218, 218, 218);
+  border: 1px solid black;
+}
+
+#dragable-header {
+  padding: 10px;
+  cursor: move;
+  z-index: relative;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+#dragable-window footer {
+  position: bottom;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 1rem;
+}
+
+/* layers */
+#background {
+  border: 1px solid black;
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+}

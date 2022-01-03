@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/sketchPad.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Etch-a-Sketch</h1>
+    <toolbar>
+      <button id="settings">Settings</button>
+      <button id="load">Loads</button>
+      <button id="save">Save</button>
+    </toolbar>
     <div class="application-container">
-      <div id="sketch-tools"></div>
+      <div id="sketch-tools">
+        <button id="create-canvas" onclick="createCanvas()">
+          Create Canvas
+        </button>
+      </div>
       <div id="sketch-container"></div>
+      <div id="sketch-layer-info"></div>
     </div>
-    <footer>Emil Shigin</footer>
-    <script src="etch-a-sketch.js"></script>
+    <script src="etch-a-sketch.js" />
   </body>
 </html>
