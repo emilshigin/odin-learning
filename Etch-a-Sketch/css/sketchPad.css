@@ -1,3 +1,16 @@
+:root {
+  --color-darkist: #1d1d1d;
+  --color-dark: #2c3e50;
+  --color-sketchpad: #ecf0f1;
+  --color-font: #ffffff;
+}
+
+/* Canvas Layers */
+
+#background {
+  border: 1px solid black;
+}
+
 /* dragable windows */
 .close {
   cursor: pointer;
@@ -8,7 +21,7 @@
   transform: translate(0%, -50%);
 }
 
-#dragable-window {
+.dragable-window {
   position: absolute;
   z-index: auto;
   width: 200px;
@@ -20,7 +33,7 @@
   padding: 10px;
   cursor: move;
   z-index: relative;
-  background-color: #2196f3;
+  background-color: #7b08ff;
   color: #fff;
 }
 
@@ -30,12 +43,4 @@
   right: 0px;
   width: 100%;
   height: 1rem;
-}
-
-/* layers */
-#background {
-  border: 1px solid black;
-  background-color: #fff;
-  width: 500px;
-  height: 500px;
 }
