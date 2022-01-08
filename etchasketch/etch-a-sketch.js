@@ -4,8 +4,6 @@ const sketchContainer = document.querySelector("#sketch-container");
 let uniqid = 100;
 
 // [TODO] Add cach and defualt values
-
-
 function get_uniqId() {
   return uniqid++;
 }
@@ -14,11 +12,10 @@ function removeDegradable(thisId) {
   document.getElementById(thisId).remove();
 }
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Buttons for the sketch-tools
 function createCanvas(){
-  let userInputs = { width: 50, height: 50, layerName: 'background', backgroundColor: 'white' };
+  let userInputs = { width: 50, height: 50, layerName: 'sketchBackground', backgroundColor: 'white' };
   const contentForm = `<form><label for='input_width'>Width:<input type="number" id="input_width" size='5' value = ${userInputs.width}></label><label for="input_height">Height:<input type="number" id="input_height" size='5' value = ${userInputs.height} /></label></form>`;
   createDragable(userInputs, contentForm, createlayer);
 }
@@ -26,7 +23,7 @@ function createCanvas(){
 // brush type :id name of button
 function brush(brushType) {
   console.log(brushType);
-  if (document.getElementById('background') == null) {
+  if (document.getElementById('sketchBackground') == null) {
     console.log('no canvas');
     return;
   }
@@ -69,15 +66,16 @@ function dragMouseDown(e) {
 // Hellper functions
 // userInputs(objectNames,width, height,layerName,backgroundColor) 
 function createlayer(userInputs) {
-  if (document.getElementById('background') == null) {
-    const background = sketchContainer.appendChild(document.createElement("div"));
-    background.setAttribute("id", "background");
+  if (document.getElementById('sketchBackground') == null) {
+    const sketchBackground = sketchContainer.appendChild(document.createElement("div"));
+    sketchBackground.setAttribute("id", "sketchBackground");
   }
-  else if (userInputs.layerName == 'background') {
-    while (document.getElementById('background').firstChild) {
-      document.getElementById('background').removeChild(document.getElementById('background').firstChild);
+  else if (userInputs.layerName == 'sketchBackground') {
+    while (document.getElementById('sketchBackground').firstChild) {
+      document.getElementById('sketchBackground').removeChild(document.getElementById('sketchBackground').firstChild);
     }
   }
+  // [TODO] Add New Layers
   else if (document.getElementById(userInputs.layerName) == null) {
     console.log('create new layerName');
     console.log('position new layerName z axis');

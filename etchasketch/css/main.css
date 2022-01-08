@@ -1,3 +1,10 @@
+:root {
+  --color-darkist: #1d1d1d;
+  --color-dark: #2c3e50;
+  --color-sketchpad: #ecf0f1;
+  --color-font: #ffffff;
+}
+
 /* CSS for the element that are static  */
 body {
   margin: 0px;
@@ -5,6 +12,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   background-color: var(--color-dark);
+  padding-top: 20px; /* remove this when contining to work on toolbar */
 }
 
 /* Toolbar taken out feature not developed*/
@@ -53,6 +61,20 @@ toolbar button {
   border: solid 1px #000;
 }
 
+#sketch-tools button {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+  outline: none;
+  border: solid 1px #000;
+  background-color: rgba(75, 0, 94, 0.699);
+  color: var(--color-font);
+  cursor: pointer;
+}
+#sketch-tools button:hover {
+  background-color: rgb(75, 0, 94);
+}
+
+/* holds the sketch canvas */
 #sketch-container {
   display: flex;
   justify-content: center;
@@ -60,7 +82,10 @@ toolbar button {
   flex-grow: 2;
   height: 100%;
   background-color: var(--color-sketchpad);
-  border: solid 1px #000;
+}
+
+#sketchBackground {
+  border: 1px solid black;
 }
 
 /* layer-info taken out feature not developed*/
