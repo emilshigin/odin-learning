@@ -9,24 +9,29 @@
     <title>Document</title>
   </head>
   <body>
-    <toolbar>
+    <!-- [Todo] add a these funtionality -->
+    <!-- <toolbar>
       <button id="settings">Settings</button>
       <button id="load">Loads</button>
       <button id="save">Save</button>
-    </toolbar>
-    <div class="toolOptions"></div>
+    </toolbar> -->
+
+    <!-- Extra options for tools IE: size of pencil-->
+    <!-- <div class="toolOptions"></div> -->
+
     <div class="application-container">
       <div id="sketch-tools">
-        <button id="pencile" onclick="brush(this.id)">pencile</button>
+        <button id="pencil" onclick="brush(this.id)">pencil</button>
         <button id="create-canvas" onclick="createCanvas()">
-          Create Canvas
+          Create New Canvas
         </button>
       </div>
+
       <div id="sketch-container"></div>
-      <div id="sketch-layer-info"></div>
+      <!-- For more information about the layer -->
+      <!-- <div id="sketch-layer-info"></div> -->
     </div>
     <footer>A Project by Emil D Shigin</footer>
-
     <script src="etch-a-sketch.js" />
   </body>
 </html>

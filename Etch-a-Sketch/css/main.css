@@ -1,11 +1,13 @@
+/* CSS for the element that are static  */
 body {
   margin: 0px;
   padding: 0px 0px;
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: var(--color-dark);
 }
 
+/* Toolbar taken out feature not developed*/
 toolbar {
   position: relative;
   display: inline-block;
@@ -31,6 +33,7 @@ toolbar button {
   background-color: gray;
 }
 
+/* This holds the sketch pad and tools*/
 .application-container {
   display: flex;
   justify-content: baseline;
@@ -60,6 +63,7 @@ toolbar button {
   border: solid 1px #000;
 }
 
+/* layer-info taken out feature not developed*/
 #sketch-layer-info {
   flex-wrap: wrap;
   background-color: aqua;
@@ -69,8 +73,10 @@ toolbar button {
   border: solid 1px #000;
 }
 
+/* bottom of page */
 footer {
   position: bottom;
+  bottom: 0;
   text-align: center;
   color: white;
   width: 100%;
