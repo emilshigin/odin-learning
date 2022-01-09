@@ -16,6 +16,6 @@
 > Once someone wins 3 games, game stops and boots to the score page.\
 > You have an option to reset the score or continue playing.
 
-## [Etch-a-sketch Demo](https://emilshigin.github.io/odinProject/Etch-a-Sketch/index.html)
+## [Etch-a-sketch Demo](https://emilshigin.github.io/odinProject/etchasketch/index.html)
 > Create canvas, click on pencl draw
 > 
