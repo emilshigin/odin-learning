@@ -24,4 +24,5 @@
 
 > Create canvas, click on pencl draw
 > Improved speed of drawing doms by calling dom less
-> ![creating 2073600 dives 1) using appendChild took 4100ms 2) using insertAdjeacentHtml of concatnated string took 2500ms 3) using innerHtml of concatnated string took 6400ms ](./img/optimizingEtchasketch-creating divs.png)
+> ![creating 2073600 dives 1) using appendChild took 4100ms 2) using insertAdjeacentHtml of concatnated string took 2500ms 3) using innerHtml of concatnated string took 6400ms ](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-creating%20divs.png)
+> ![code that was used](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-code.png)
