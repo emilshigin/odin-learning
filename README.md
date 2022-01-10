@@ -24,5 +24,6 @@
 
 > Create canvas, click on pencl draw
 > Improved speed of creating canvas by calling the doms only once
-> ![creating 2073600 dives method 1: took 4100ms using appendChild. Method 2: took 2500ms using insertAdjeacentHtml of concatnated string.Lastly method 3: took 6400ms using innerHtml of concatnated string. ](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-creating%20divs.png)
-> ![code for all three methods (The fastest method is being used in dir: etchasketch/etch-a-sketch.js start line: line 91)](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-code.png)
+
+![creating 2073600 dives method 1: took 4100ms using appendChild. Method 2: took 2500ms using insertAdjeacentHtml of concatnated string.Lastly method 3: took 6400ms using innerHtml of concatnated string. ](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-creating%20divs.png)
+![code for all three methods (The fastest method is being used in dir: etchasketch/etch-a-sketch.js start line: line 91)](https://github.com/emilshigin/odin-learning/blob/main/img/optimizingEtchasketch-code.png)
