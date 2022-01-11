@@ -120,11 +120,10 @@ function createDragable(userInputs, contentForm, functionApply) {
 //updates objects that are passed in from the form
 //function apply is the callback function  for createDragable
 function updateUserInputs(userInputs,functionApply) {
-  let objectName ;
-    for (let i = 0; i < Object.keys(userInputs).length; i++) {
-      objectName = Object.keys(userInputs)[i];
-      if (document.getElementById('input_' + objectName) != null && document.getElementById('input_' + objectName).value != null) {
-        userInputs[objectName] = document.getElementById('input_' + objectName).value;
+    for(let key in userInputs) {
+      if (document.getElementById('input_' + key) != null && document.getElementById('input_' + key).value != null) {
+        userInputs[key] = document.getElementById('input_' + key).value;
+        console.log('key inupdateUserInput',userInputs[key]);
       }
     }
   functionApply(userInputs);
