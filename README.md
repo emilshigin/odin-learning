@@ -23,7 +23,8 @@
 ## [Etch-a-sketch Demo](https://emilshigin.github.io/odin-javascript/etchasketch/index.html)
 
 > Create canvas, click on pencl and draw.\
-> Improved speed of creating canvas by calling the doms only once.
+> Improved speed of creating canvas by calling the doms only once.\
+> Conclution: use insertAdjeacentHtml when possable
 
 ![screanshot of terminl output: creating 2073600 dives method 1: took 4100ms using appendChild. Method 2: took 2500ms using insertAdjeacentHtml of concatnated string.Lastly method 3: took 6400ms using innerHtml of concatnated string. ](https://github.com/emilshigin/odin-javascript/blob/main/img/optimizingEtchasketch-creating%20divs.png)
 ![screenshot of code for all three methods (The fastest method is being used in dir: etchasketch/etch-a-sketch.js start line: line 91)](https://github.com/emilshigin/odin-javascript/blob/main/img/optimizingEtchasketch-code.png)
